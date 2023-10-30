@@ -226,6 +226,65 @@
       });
 
 
+      $(".blog-detail-slider").slick({
+        // infinite: true,
+        slidesToShow: 5,
+        slidesToScroll: 2,
+        centerMode: true,
+        centerPadding: "10px",
+        autoplay: false,
+        autoplaySpeed: 3000,
+        dots: false,
+        arrows: true,
+        cssEase: "linear",
+        adaptiveHeight: true,
+        prevArrow:
+          '<button class="slide-arrow prev-arrow"><i class="ri-arrow-left-line"></i></button>',
+        nextArrow:
+          '<button class="slide-arrow next-arrow"><i class="ri-arrow-right-line"></i></button>',
+        responsive: [
+          {
+            breakpoint: 1919,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1,
+              centerPadding: "10px",
+            },
+          },
+          {
+            breakpoint: 1499,
+            settings: {
+              slidesToShow: 2,
+              centerPadding: "10px",
+            },
+          },
+          {
+            breakpoint: 1199,
+            settings: {
+              slidesToShow: 2,
+            },
+          },
+          {
+            breakpoint: 991,
+            settings: {
+              slidesToShow: 2,
+              centerPadding: "10px",
+            },
+          },
+          {
+            breakpoint: 767,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1,
+              centerPadding: "10px",
+              dots: true,
+              arrows: false,
+            },
+          },
+        ],
+      });
+
+
       $(".slick-home-banner").slick({
         // infinite: true,
         slidesToShow: 1,
